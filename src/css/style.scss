@@ -1,0 +1,392 @@
+@use "./base/mixins" as *;
+@use "./base/variables" as *;
+@use "./base/reset";
+@use "./base/fonts";
+@use "../icons/style.css";
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 15px;
+  height: 700px;
+  background-image: url(../images/trees1.jpg);
+  background-size: cover;
+  background-position: center;
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    margin-left: auto;
+    li {
+      transition: all 300ms;
+    }
+    a {
+      color: white;
+      padding: 5px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $roboto;
+      transition: all 300ms;
+      position: relative;
+      margin-right: 1.7rem;
+      &:hover,
+      &:active {
+        color: $turqoise;
+      }
+    }
+  }
+  .container > h1 {
+    color: $white;
+    font-size: 3.2rem;
+    font-family: $playfair;
+    font-weight: 700;
+    padding: 100px 0;
+    &::after {
+      content: "";
+      display: block;
+      border: 1px solid $turqoise;
+      width: 50px;
+      position: absolute;
+      margin-left: 550px;
+      margin-top: 30px;
+    }
+  }
+  .container > p {
+    color: $white;
+    font-size: 14px;
+    font-family: $roboto;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+  .button {
+    color: $turqoise;
+    padding: 13px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -60px;
+    font-family: $roboto;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid $turqoise;
+    border-radius: 2px 0;
+  }
+}
+.container {
+  text-align: center;
+}
+
+.bol1 {
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  display: block;
+  border: 1px solid $turqoise;
+  position: absolute;
+  top: 600px;
+  left: 925px;
+  background-color: $turqoise;
+}
+.bol2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  display: block;
+  border: 1px solid $white;
+  position: absolute;
+  top: 600px;
+  left: 940px;
+}
+.bol3 {
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  display: block;
+  border: 1px solid $white;
+  position: absolute;
+  top: 600px;
+  left: 955px;
+}
+.bol4 {
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  display: block;
+  border: 1px solid $white;
+  position: absolute;
+  top: 600px;
+  left: 970px;
+}
+
+.container1 {
+  text-align: center;
+  height: 570px;
+  h1 {
+    color: black;
+    font-family: $playfair;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 70px;
+  }
+  h2 {
+    color: $subtitle;
+    font-size: 14px;
+    font-family: $playfair;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    margin-top: 20px;
+    &:after {
+      content: "";
+      display: block;
+      border: 1px solid $subtitle;
+      width: 50px;
+      position: absolute;
+      margin-left: 925px;
+      margin-top: 30px;
+    }
+  }
+  section {
+    @include make-col(2, 80px);
+    justify-content: center;
+    .gedoe {
+      @include flex(row, space-between, center);
+      img {
+        width: 50%;
+      }
+    }
+  }
+  .button {
+    color: $turqoise;
+    padding: 13px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: -60px;
+    font-family: $roboto;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid $turqoise;
+    border-radius: 2px 0;
+  }
+  p {
+    font-size: 14px;
+    font-family: $roboto;
+    margin-top: 90px;
+  }
+  img {
+    margin-top: 50px;
+    margin-right: 120px;
+  }
+}
+
+main .container2 {
+  height: 550px;
+  background-image: url(../images/skyline.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: $white;
+    text-align: center;
+    font-size: 16px;
+    font-family: $roboto;
+    font-weight: 700;
+  }
+  a {
+    color: $white;
+    font-size: 100px;
+  }
+}
+
+main .container3 {
+  height: 750px;
+  background-color: $white;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  h1 {
+    font-size: 22px;
+    font-family: $playfair;
+    margin-top: 70px;
+  }
+  .tittel {
+    font-size: 14px;
+    font-family: $playfair;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+      content: "";
+      display: block;
+      border: 1px solid $subtitle;
+      width: 50px;
+      position: absolute;
+      margin-left: 545px;
+      margin-top: 30px;
+    }
+  }
+  .grid-container {
+    @include make-col(3, 70px);
+  }
+  h2 {
+    font-size: 14px;
+    font-family: $roboto;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  p {
+    font-family: $roboto;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+  }
+  a {
+    font-size: 50px;
+    color: $turqoise;
+  }
+}
+
+main .container4 {
+  height: 800px;
+  background-image: url(../images/trees2.jpg);
+  background-position: center;
+  background-size: cover;
+  h1 {
+    font-size: 22px;
+    font-family: $playfair;
+    text-align: center;
+    color: $white;
+    padding-top: 70px;
+  }
+  h2 {
+    font-size: 14px;
+    font-family: $playfair;
+    color: $white;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  .foto {
+    border: 1px solid white;
+    margin: 0 20px;
+  }
+  .team h3 {
+    color: $white;
+    font-size: 14px;
+    font-family: $roboto;
+    text-align: center;
+    padding-top: 17px;
+    font-weight: 600;
+  }
+  .team p {
+    color: $white;
+    font-size: 14px;
+    font-family: $roboto;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .button {
+    color: $turqoise;
+    padding: 13px;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 865px;
+    font-family: $roboto;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid $turqoise;
+    border-radius: 2px 0;
+  }
+}
+
+main .container5 {
+  height: 780px;
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: $playfair;
+    color: black;
+    margin-top: 300px;
+  }
+  h2 {
+    font-size: 14px;
+    font-family: $playfair;
+    font-weight: 300;
+    color: $subtitle;
+    padding-top: 20px;
+    &:after {
+      content: "";
+      display: block;
+      border: 1px solid $subtitle;
+      width: 50px;
+      position: absolute;
+      margin-left: 925px;
+      margin-top: 30px;
+    }
+  }
+  .werk {
+    .grijs {
+      @include make-col(6, 0px);
+      margin-bottom: 70px;
+      div {
+        height: 200px;
+      }
+      .fotodonker {
+        background-color: #b6b6b6;
+      }
+      .fotolicht {
+        background-color: #acacac;
+      }
+      .fotonormaal {
+        background-color: #a1a1a1;
+      }
+      .fotosuperlicht {
+        background-color: #8a8a8a;
+      }
+    }
+    .button {
+      color: $turqoise;
+      padding: 13px;
+      font-family: $roboto;
+      position: absolute;
+      font-size: 1.4rem;
+      text-decoration: none;
+      border: 1px solid $turqoise;
+      border-radius: 2px 0;
+    }
+  }
+}
+footer {
+  background-color: #120e37;
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $white;
+  text-align: center;
+  padding: 28px 0;
+}

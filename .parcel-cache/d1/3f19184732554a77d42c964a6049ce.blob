@@ -1,0 +1,4 @@
+import   "49c21f292268201e44ba326127d704fb:../css/style.scss";
+import   "49c21f292268201e44ba326127d704fb:./classes/Square";
+new $49c21f292268201e44ba326127d704fb$import$1a7a563bf7d64006$9099ad97b570f7c(20, 20, 200, document.querySelector(".test"));
+console.log("productionsecret");

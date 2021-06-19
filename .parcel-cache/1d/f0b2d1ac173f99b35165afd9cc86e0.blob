@@ -1,0 +1,96 @@
+function $90d7cd743f12f396927b56b73fa2d687$var$_classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(receiver, privateMap) {
+    var descriptor = $90d7cd743f12f396927b56b73fa2d687$var$_classExtractFieldDescriptor(receiver, privateMap, "get");
+    return $90d7cd743f12f396927b56b73fa2d687$var$_classApplyDescriptorGet(receiver, descriptor);
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classApplyDescriptorGet(receiver, descriptor) {
+    if (descriptor.get) return descriptor.get.call(receiver);
+    return descriptor.value;
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateMethodGet(receiver, privateSet, fn) {
+    if (!privateSet.has(receiver)) throw new TypeError("attempted to get private field on non-instance");
+    return fn;
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(receiver, privateMap, value) {
+    var descriptor = $90d7cd743f12f396927b56b73fa2d687$var$_classExtractFieldDescriptor(receiver, privateMap, "set");
+    $90d7cd743f12f396927b56b73fa2d687$var$_classApplyDescriptorSet(receiver, descriptor, value);
+    return value;
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classExtractFieldDescriptor(receiver, privateMap, action) {
+    if (!privateMap.has(receiver)) throw new TypeError("attempted to " + action + " private field on non-instance");
+    return privateMap.get(receiver);
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_classApplyDescriptorSet(receiver, descriptor, value) {
+    if (descriptor.set) descriptor.set.call(receiver, value);
+    else {
+        if (!descriptor.writable) throw new TypeError("attempted to set read only private field");
+        descriptor.value = value;
+    }
+}
+var $90d7cd743f12f396927b56b73fa2d687$var$_x = /*#__PURE__*/ new WeakMap();
+var $90d7cd743f12f396927b56b73fa2d687$var$_y = /*#__PURE__*/ new WeakMap();
+var $90d7cd743f12f396927b56b73fa2d687$var$_size = /*#__PURE__*/ new WeakMap();
+var $90d7cd743f12f396927b56b73fa2d687$var$_holder = /*#__PURE__*/ new WeakMap();
+var $90d7cd743f12f396927b56b73fa2d687$var$_clicked = /*#__PURE__*/ new WeakMap();
+var $90d7cd743f12f396927b56b73fa2d687$var$_generateHTML = /*#__PURE__*/ new WeakSet();
+var $90d7cd743f12f396927b56b73fa2d687$var$_setStyling = /*#__PURE__*/ new WeakSet();
+var $90d7cd743f12f396927b56b73fa2d687$var$_setUpEvents = /*#__PURE__*/ new WeakSet();
+var $90d7cd743f12f396927b56b73fa2d687$export$9099ad97b570f7c = function Square(x, y, size, holder) {
+    $90d7cd743f12f396927b56b73fa2d687$var$_classCallCheck(this, Square);
+    $90d7cd743f12f396927b56b73fa2d687$var$_setUpEvents.add(this);
+    $90d7cd743f12f396927b56b73fa2d687$var$_setStyling.add(this);
+    $90d7cd743f12f396927b56b73fa2d687$var$_generateHTML.add(this);
+    $90d7cd743f12f396927b56b73fa2d687$var$_x.set(this, {
+        writable: true,
+        value: void 0
+    });
+    $90d7cd743f12f396927b56b73fa2d687$var$_y.set(this, {
+        writable: true,
+        value: void 0
+    });
+    $90d7cd743f12f396927b56b73fa2d687$var$_size.set(this, {
+        writable: true,
+        value: void 0
+    });
+    $90d7cd743f12f396927b56b73fa2d687$var$_holder.set(this, {
+        writable: true,
+        value: void 0
+    });
+    $90d7cd743f12f396927b56b73fa2d687$var$_clicked.set(this, {
+        writable: true,
+        value: 0
+    });
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(this, $90d7cd743f12f396927b56b73fa2d687$var$_x, x);
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(this, $90d7cd743f12f396927b56b73fa2d687$var$_y, y);
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(this, $90d7cd743f12f396927b56b73fa2d687$var$_size, size);
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(this, $90d7cd743f12f396927b56b73fa2d687$var$_holder, holder);
+    this.htmlRef = $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateMethodGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_generateHTML, $90d7cd743f12f396927b56b73fa2d687$var$_generateHTML2).call(this); //console.log(this.htmlRef);
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateMethodGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_setStyling, $90d7cd743f12f396927b56b73fa2d687$var$_setStyling2).call(this);
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateMethodGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_setUpEvents, $90d7cd743f12f396927b56b73fa2d687$var$_setUpEvents2).call(this);
+}//   get x() {
+;
+function $90d7cd743f12f396927b56b73fa2d687$var$_generateHTML2() {
+    $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_holder).insertAdjacentHTML("beforeend", "\n        <div class=\"square\"></div>\n      ");
+    return $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_holder).querySelector(".square:last-child");
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_setStyling2() {
+    var styles = {
+        left: $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_x) + "px",
+        top: $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_y) + "px",
+        width: $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_size) + "px",
+        height: $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(this, $90d7cd743f12f396927b56b73fa2d687$var$_size) + "px",
+        backgroundColor: "blue"
+    };
+    Object.assign(this.htmlRef.style, styles);
+}
+function $90d7cd743f12f396927b56b73fa2d687$var$_setUpEvents2() {
+    var _this = this;
+    this.htmlRef.onclick = function() {
+        var _this$clicked;
+        _this.htmlRef.style.backgroundColor = "red";
+        $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldSet(_this, $90d7cd743f12f396927b56b73fa2d687$var$_clicked, (_this$clicked = +$90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(_this, $90d7cd743f12f396927b56b73fa2d687$var$_clicked)) + 1);
+        if ($90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(_this, $90d7cd743f12f396927b56b73fa2d687$var$_clicked) === 5) $90d7cd743f12f396927b56b73fa2d687$var$_classPrivateFieldGet(_this, $90d7cd743f12f396927b56b73fa2d687$var$_holder).removeChild(_this.htmlRef);
+    };
+}
